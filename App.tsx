@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { 
   MapPin, Truck, Award, Home, ShoppingBag, 
@@ -304,7 +305,7 @@ const CollectionMap = ({ points }: { points: CollectionPoint[] | any[] }) => {
 const Onboarding = ({ onComplete }: { onComplete: () => void }) => {
   const [step, setStep] = useState(0);
   const steps = [
-    { title: "Welcome to ewaste2go", desc: "The easiest way to recycle electronics in Sabah.", img: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", icon: Recycle },
+    { title: "Welcome to e-waste2go", desc: "The easiest way to recycle electronics in Sabah.", img: "https://www.genevaenvironmentnetwork.org/wp-content/uploads/2020/09/ewaste-aspect-ratio-2000-1200-1024x614.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", icon: Recycle },
     { title: "Schedule Pickups", desc: "We come to you. Real-time GPS tracking for every pickup.", img: "https://images.unsplash.com/photo-1615914143778-1a1a6e50c5dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", icon: Truck },
     { title: "Trade & Earn", desc: "Sell valuable parts to partners or earn points for recycling.", img: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", icon: Award },
     { title: "Sustainable Sabah", desc: "Join us and DBKK in making our state greener.", img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", icon: Globe }
@@ -344,7 +345,7 @@ const Auth = ({ onLogin, t }: any) => {
             <Recycle className="w-10 h-10 text-primary-600" />
           </div>
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white">{isLogin ? t('welcomeBack') : t('createAccount')}</h2>
-          <p className="text-gray-500 dark:text-gray-400 mt-2">ewaste2go</p>
+          <p className="text-gray-500 dark:text-gray-400 mt-2">e-waste2go</p>
         </div>
         <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); onLogin(); }}>
           {!isLogin && (
@@ -474,7 +475,7 @@ const HomeView = ({ user, activePickup, pickups, onSchedule, onNavigate, t, onVi
     <div className="space-y-6 pb-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
       {/* Custom Header */}
       <div className="bg-primary-600 p-6 pt-8 pb-8 rounded-b-[2rem] shadow-lg -mx-4 -mt-4 mb-2">
-        <h1 className="text-3xl font-bold text-white mb-1">ewaste2go</h1>
+        <h1 className="text-3xl font-bold text-white mb-1">e-waste2go</h1>
         <p className="text-primary-100 font-medium opacity-90">Your Points: <span className="font-bold text-white">{user.stats.rewardPoints}</span></p>
       </div>
 
@@ -1414,7 +1415,7 @@ const ProfileView = ({ user, onLogout, settings, onUpdateSetting, t, pickups, on
                </div>
                <h2 className="text-2xl font-bold dark:text-white mb-2">Application Submitted!</h2>
                <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-sm">
-                  Thank you for your interest in partnering with ewaste2go. <br/><br/>
+                  Thank you for your interest in partnering with e-waste2go. <br/><br/>
                   Our team has received your details and will review your application. You can expect to hear from our partnership department within <strong>3-5 business days</strong> via email.
                </p>
                <Button onClick={closeModal} className="w-full">Done</Button>
@@ -1469,7 +1470,7 @@ const ProfileView = ({ user, onLogout, settings, onUpdateSetting, t, pickups, on
                   <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl flex items-center justify-between border border-blue-100 dark:border-blue-800" onClick={() => window.open('mailto:support@ewaste2go.my')}>
                      <div className="flex items-center space-x-4">
                         <Mail className="w-6 h-6 text-blue-600" />
-                        <div><p className="font-bold text-sm dark:text-white">{t('emailSupport')}</p><p className="text-xs text-gray-500">support@ewaste2go.my</p></div>
+                        <div><p className="font-bold text-sm dark:text-white">{t('emailSupport')}</p><p className="text-xs text-gray-500">support@e-waste2go.my</p></div>
                      </div>
                   </div>
                </div>

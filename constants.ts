@@ -1,3 +1,4 @@
+
 import { CollectionPoint, MarketplaceAd, Pickup, Reward, User } from './types';
 
 export const INITIAL_USER: User = {
@@ -293,7 +294,7 @@ export const TRANSLATIONS: any = {
     pickupHistory: "Pickup History",
     partnershipProgram: "Partnership Program",
     helpSupport: "Help & Support",
-    partnerHeroTitle: "Partner with ewaste2go",
+    partnerHeroTitle: "Partner with e-waste2go",
     partnerHeroDesc: "Join Sabah's leading e-waste management network. Connect with users, boost your sustainability impact, and grow your business.",
     partnershipBenefits: "Partnership Benefits",
     visibility: "Visibility",
@@ -385,7 +386,7 @@ export const TRANSLATIONS: any = {
     pickupHistory: "Sejarah Pengambilan",
     partnershipProgram: "Program Rakan Kongsi",
     helpSupport: "Bantuan & Sokongan",
-    partnerHeroTitle: "Rakan Kongsi ewaste2go",
+    partnerHeroTitle: "Rakan Kongsi e-waste2go",
     partnerHeroDesc: "Sertai rangkaian pengurusan e-sisa terkemuka Sabah. Berhubung dengan pengguna, tingkatkan impak kelestarian, dan kembangkan perniagaan anda.",
     partnershipBenefits: "Faedah Rakan Kongsi",
     visibility: "Keterlihatan",

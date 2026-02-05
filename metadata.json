@@ -1,5 +1,5 @@
 {
-  "name": "ewaste2go",
+  "name": "e-waste2go",
   "description": "A comprehensive E-Waste Management app for Sabah allowing users to schedule pickups, track drivers, find collection points, trade e-waste components, and earn rewards.",
   "requestFramePermissions": [
     "geolocation"
